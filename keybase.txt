@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/bernhardwittmann
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://bernhardwittmann.com
+  * I am bernhardwittmann (https://keybase.io/bernhardwittmann) on keybase.
+  * I have a public key with fingerprint FDD3 CD9D FDE4 EC17 28E1  E49F 6CA9 5916 4F29 1F4B
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01203f1866668dec9536f9f03566a7edffdb531de3fd456dcd1ecf40550a1c6e768c0a",
+      "fingerprint": "fdd3cd9dfde4ec1728e1e49f6ca959164f291f4b",
+      "host": "keybase.io",
+      "key_id": "6ca959164f291f4b",
+      "kid": "01015b0eadcfc968a0c7ed97b65878e033b8fc7b4bf2dcc691d963e067894b0aa79e0a",
+      "uid": "5baf9d98d25c205110c6cbae25fc5419",
+      "username": "bernhardwittmann"
+    },
+    "service": {
+      "hostname": "bernhardwittmann.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1544201573,
+  "expire_in": 157680000,
+  "prev": "df91356e8c9b5a4c77f065a5c5cb21b642c34b5c1d7a8a67766289647fc800ff",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMN1AnicdZJtUBVVGMcv8n6JF2PAPhTQIgwi4u69u2d3b6RSzeSEI4yA+UJz2z3n
+LKzA7vXevSjyMoJBA8wEAjpM6hQREMZEoFjCRKmMDhEIKUHGpAYDKcw0iZSCUXuZ
+/Fbny3n7P7/zf57z9Pu7G4xuOW17Q5M3hCe5DV76xGnIMDbjAkJUUT5hKSCy8eqE
+cxB2aNZsGREWgqRMpFmiOKAPDmHIM2Yg8RJpZgAQWIwkCYmMmULYLCGaAQgiCkOJ
+JhmGFCgIMAs4SApEHCHJSia22+yyoulYCSEzRDySEKYxpFgThylM8xKAAs/wFKAl
+E09JtKgHZqkOV4RuThQcOF5W9TN9Y1219x/6p75JihFJLCAoQR5wAgl1tzwrAoZj
+OUyazSInQVakRcmEIAQ8hXhgxiRgOZ4WSUFgebzq27mKY0RB4hHPIRMDTSRDUSQE
+UBSwiZEgQ1O8S+jAdkXIxbpa1FdZgh0dkjUtV1AUoiiO0G/zZIhdBXZl9D/KeKjm
+6iybXdVUqOboiixNszksLoKWb3OFHMKi9V+YVZQVpNdVj8jDdoesKoSF0pVQk110
+iqFpk14G1hxH4MM22Y6tskvB6J9C6sP1Ds7TkUjiKf1DMQd5kRFoyLISCRiBgQwU
+TZQIaBM00yIDKcQKnABYFgATxwOalaAOkiTCld5BRdXZQPcpZOpMh5ypCJrTjomi
+y5cyPAxuRoOX5xpXwxmMvkFP29Dzz8CVrSPy1AsJ27dXBJ5azA5sDlmpro6J7D3X
+2tRWP/bIUJnv1VSsdk7P14wPHeseFyzlazJqfuLXnZ8t3Px5WdWT5pOpE523P6hL
+mXng7Zc2A6LDnfd2XZazv/NVd114t9bWNziVv+2GIeRg/fxQ5VLHxY/eGbgf4bMP
+9+ZdL/i1WNtdk91XXrhzS0lwS6Vy/i2ObDZee/THdDoVO+Ae6pzwajizLTHoSs/m
++TZrjcf1ypd8YgYT2x7k3C4dLOxLe9y7Wwt++VbA3tT4gcnjf+8Z2wnUc8+1K95f
+HGtaTtGKS9+uXnlv8fCTcvX9oZutr//+fO2LQZ9edfd33pgfGVgAwpEu/+Pdk99+
+H1t1q6fIO3YpJHZ4rOL+lmQl1ccaTZeKtReSH+cmJFXb5f2bCkbdWgxL8ZHrmMgD
+bwZEB4Xyf9kWGhJyy77ZkZR7qm9WHf2xcTExIOrs2rKj6GJJ8JF+ZTxWi6nprPv4
+ztxMpDOt/o2JabpysSTtt4Evwz3XPhwbjWi845HeE5EXUVfdHuxuXJCNiSlJRx9G
+dWx65mbxVxXczD76bnZt2MieiS4b3xxxZePc3bO/3GsMraoQN15NOYlf+br/2o7X
+Pgs8IG1t9+v/8NW5Z+vWR623nvApNHrNx4U1LMekb4is7vTrVvcveQRa1FbPHzKX
+hy1hZ0Imf24ZnvI90dVxOuf07D/2YsVM
+=Cp8m
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bernhardwittmann
+
+==================================================================
