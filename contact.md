@@ -3,10 +3,14 @@ layout: simple_with_image
 title: Contact
 ---
 
+<p class="has-text-centered">
+	Feel free to contact me via E-Mail
+</p>
+
 ---
 
-<p id="email">
-	<a href="mailto:contact@bernhardwittmann.com">contact@bernhardwittmann.com</a>
+<p id="email" class="has-text-centered">
+	<a class="content is-large" href="mailto:contact@bernhardwittmann.com">contact@bernhardwittmann.com</a>
 </p>
 
 ---
@@ -26,7 +30,19 @@ title: Contact
 		</span>
 		<span>LinkedIn</span>
 	</a>
-	<a class="button is-large is-white" href="https://keybase.io/bernhardwittmann">
+	<a class="button is-large is-white" href="https://github.com/berniwittmann">
+		<span class="icon">
+			<i class="fab fa-github"></i>
+		</span>
+		<span>GitHub</span>
+	</a>
+</p>
+<div>
+	<br>
+	<br>
+</div>
+<p class="has-text-centered">
+	<a class="button is-medium is-outlined is-info" href="https://keybase.io/bernhardwittmann">
 		<span class="icon">
 			<i class="fab fa-keybase"></i>
 		</span>

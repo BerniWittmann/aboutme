@@ -11,13 +11,18 @@ layout: default
 		margin-bottom: 140px;
 	}
 
+	#intro {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	#intro .title {
 		margin-top: 10px;
 		margin-bottom: 1.8rem;
 	}
 
 	#icon {
-		border-radius: 50%;
 		filter: drop-shadow(0px 1px 3px #D5D5D5);
 	}
 </style>
@@ -27,9 +32,9 @@ layout: default
 		<div class="container has-text-centered">
 			<div class="columns is-vcentered is-centered">
 				<div id="intro" class="column is-half is-narrow">
-					<p>
-						<img id="icon" src="{{ relative_path }}/image.jpg" width="256" height="256">
-					</p>
+					<figure class="image is-256x256">
+					  	<img id="icon" class="is-rounded" src="{{ relative_path }}/image.jpg" width="256" height="256">
+					</figure>
 					<h1 class="title is-1">{{ page.title }}</h1>
 				</div>
 			</div>
