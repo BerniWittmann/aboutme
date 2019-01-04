@@ -15,5 +15,20 @@
 	});
 
 	// Higlight active nav menu item
-	dom.select(`.nav-menu a[href$="${window.location.pathname}"]`).classList.add('is-active');
+	const navEl = dom.select(`.nav-menu a[href$="${window.location.pathname}"]`)
+	if (navEl) {
+		navEl.classList.add('is-active');
+	}
+
+	// Scroll Hint
+	{
+		function hideScrollHint() {
+			if (window.scrollY > 100) {
+				document.removeEventListener('scroll', hideScrollHint);
+				dom.select('#scroll-hint').classList.add('hidden');
+			}
+		}
+
+		document.addEventListener('scroll', hideScrollHint, {passive: true});
+	}
 })();

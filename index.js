@@ -17,15 +17,4 @@
 
 	// Smooth anchor scroll
 	new AnchorScroller();
-
-	{
-		function hideScrollHint() {
-			if (window.scrollY > 100) {
-				document.removeEventListener('scroll', hideScrollHint);
-				dom.select('#scroll-hint').classList.add('hidden');
-			}
-		}
-
-		document.addEventListener('scroll', hideScrollHint, {passive: true});
-	}
 })();
