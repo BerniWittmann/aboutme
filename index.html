@@ -2,23 +2,13 @@
 layout: default
 ---
 
-<style>
-	#latest-repos-container h2 {
-		margin-bottom: 2rem;
-	}
-
-	#latest-repos h4 {
-		margin-bottom: 0.5rem;
-	}
-</style>
-
 <section class="hero is-fullheight is-default">
 	<div class="hero-body">
 		<div id="info-container" class="container has-text-centered">
 			<div class="columns is-vcentered">
 				<div class="column is-two-thirds is-centered has-nice-link" itemscope itemtype="http://schema.org/Person">
 					<figure class="image is-256x256" id="profile-pic-wrap">
-					  <img src="image.jpg" id="profile-pic" class="animated zoomIn" width="256" height="256" itemprop="image">
+					  <img src="image.jpg" id="profile-pic" class="profile-pic" class="animated zoomIn" width="256" height="256" itemprop="image">
 					</figure>
 
 					<h1 class="title is-2" itemprop="name">Bernhard Wittmann</h1>
@@ -66,18 +56,40 @@ layout: default
 	</div>
 </section>
 
-<section class="hero is-fullheight is-gray">
-	<div id="greeting" class="hero-body container">
-		<h2 class="title is-2">Hi I#m berniwittmann TODO Text</h2>
+<section class="hero is-large is-gray">
+	<div id="about-me" class="hero-body">
+		<div class="container">
+			<div class="flex-columns">
+				<div class="flex-column has-nice-link">
+					<h2 class="title is-2 has-text-centered">Hi 👋   I'm Bernhard Wittmann</h2>
+					<p class="mb-10 is-size-4 has-text-centered-mobile">
+						I'm a Developer and Student from Germany.
+						I started Coding with 13 and am more passionate about it than ever.
+						Hopefully you'll get some insights about myself and my work on this site.
+					</p>
+					<br>
+					<h5 class="title is-5">Current Positions</h5>
+					<p class="is-size-5 has-text-left">Developer @ <a target="_blank" href="https://www.home-fox.de/">HomeFox</a></p>
+					<p class="is-size-5 has-text-left">M.Sc. Student @ <a target="_blank" href="https://www.uni-ulm.de/">Ulm University</a></p>
+					<p class="is-size-5 has-text-left">Developer and Webmaster @ <a target="_blank" href="https://www.handballismaning.de/">TSV Ismaning Handball</a></p>
+				</div>
+				<div class="flex-column no-flex">
+					<figure class="image is-256x256">
+						<img src="image.jpg" class="profile-pic" width="256" height="256" itemprop="image">
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
-<section class="hero is-fullheight">
+<section class="hero is-large">
 	<div id="academia" class="hero-body container">
 		<div class="columns is-vcentered">
 			<div class="column has-text-centered has-nice-link is-4">
 				<p><i class="fas fa-graduation-cap fa-7x"></i></p>
 				<br/>
-				<h4 class="title is-4" style="font-weight: 400">I'm a Master student in Software-Engineering and always passionate about the newest technologies and frameworks.</h4>
+				<h4 class="title is-4" style="font-weight: 400">I'm doing my Masters Degree in Software Engineering at Ulm University and currently focusing on Neuroinformatics and Software Engineering.</h4>
 			</div>
 			<div class="column is-7 is-offset-1 has-nice-link">
 				<h2 class="title is-2 has-text-centered-mobile">Academia</h2>
@@ -136,7 +148,6 @@ layout: default
 								</div>
 							</div>
 						</div>
-						<div id="academia-text"></div>
 					</div>
 		</div>
 	</div>
@@ -144,9 +155,9 @@ layout: default
 
 
 
-<section class="hero is-fullheight is-gray">
-	<div id="about-me" class="hero-body container">
-		<div class="columns is-vcentered">
+<section class="hero is-large is-gray">
+	<div id="skills" class="hero-body container">
+		<div class="columns is-vcentered is-7">
 			<div id="latest-repos-container" class="column has-nice-link">
 				<h2 class="title is-2">Skills</h2>
 				<div class="columns is-multiline">
@@ -189,6 +200,27 @@ layout: default
 					</div>
 				</div>
 			</div>
+			<div class="column has-text-centered has-nice-link is-offset-1 is-4">
+				<p class="is-hidden-mobile"><i class="fas fa-cogs fa-6x"></i></p>
+				<br/>
+				<h4 class="title is-4" style="font-weight: 400">
+						I'm working with Frontend as well as with Backend technologies. The ones listed are just a small excerpt. You can find out more on GitHub or GitLab
+				</h4>
+				<p class="mt-10">
+					<a class="button is-large" target="_blank" href="https://github.com/berniwittmann">
+						<span class="icon">
+							<i class="fab fa-github"></i>
+						</span>
+						<span>GitHub</span>
+					</a>
+					<a class="button is-large" target="_blank" href="https://gitlab.com/BerniWittmann">
+						<span class="icon">
+							<i class="fab fa-gitlab"></i>
+						</span>
+						<span>GitLab</span>
+					</a>
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
@@ -196,6 +228,7 @@ layout: default
 <section class="section hero is-fullheight is-default is-bold">
 	<div id="projects" class="container">
 		<h2 class="title is-2">Projects</h2>
+		<p class="mb-30 is-size-5">Some Projects I have worked on in the past or am currently working on</p>
 		<div class="columns is-multiline">
 			{% for app in site.apps reversed %}
 			<div class="column is-mobile is-half-tablet is-one-third-desktop">
@@ -228,6 +261,17 @@ layout: default
 			</div>
 			{% endfor %}
 		</div>
+		<div class="has-text-centered ">
+			<p class="has-text-weight-semibold mt-30 is-size-4">Also check out my Open-Source Contributions on GitHub</p>
+			<p class="mt-10">
+				<a class="button is-large" href="https://github.com/berniwittmann">
+					<span class="icon">
+						<i class="fab fa-github"></i>
+					</span>
+					<span>GitHub</span>
+				</a>
+			</p>
+		</div>
 	</div>
 </section>
 
@@ -240,5 +284,17 @@ layout: default
 		<p class="has-text-centered">
 				<a id="download-button" class="button is-dark is-outlined is-large" href="/contact">Contact</a>
 		</p>
+		<br>
+		<div class="mt-10">
+			<p class="has-text-left is-pulled-left"><i class="far fa-copyright"></i> 2019 Bernhard Wittmann</p>
+			<p class="has-text-right is-pulled-right">
+				<a class="button is-light" id="backToTopButton">
+					<span class="icon is-small mr-5">
+					 	<i class="fa fa-angle-up"></i>
+				 	</span>
+				 	 Back To Top
+			 </a>
+			</p>
+		</div>
 	</div>
 </section

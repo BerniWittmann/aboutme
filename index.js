@@ -16,5 +16,12 @@
 	}
 
 	// Smooth anchor scroll
-	new AnchorScroller();
+	const scroller = new AnchorScroller().scroller;
+
+
+	function scrollToTop() {
+		scroller.scrollTo(0);
+	}
+
+	dom.select('#backToTopButton').addEventListener('click', scrollToTop);
 })();

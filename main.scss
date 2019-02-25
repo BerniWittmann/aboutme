@@ -16,7 +16,7 @@ $gray-link: hsl(220, 40%, 40%);
 .is-gray {
 	background-color: hsl(210, 10%, 97%);
 
-	a {
+	a:not(.button) {
 		color: $gray-link;
 	}
 
@@ -154,7 +154,7 @@ body {
 	margin-right: auto;
 }
 
-#profile-pic {
+.profile-pic {
 	width: inherit;
 	height: inherit;
 	border-radius: 80px;
@@ -237,4 +237,51 @@ body {
 			display: flex;
 			justify-content: center;
 		}
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mr-5 {
+	margin-right: 5px !important;
+}
+
+.flex-columns {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+	.flex-column {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 10vw;
+		flex: 1;
+		min-width: 300px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+		&.no-flex {
+			flex: 0;
+		}
+	}
+}
+
+#footer {
+	a {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
