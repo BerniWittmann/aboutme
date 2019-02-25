@@ -216,3 +216,25 @@ body {
 		display: none !important;
 	}
 }
+
+#academia {
+		& > .columns {
+			width: 100%;
+		}
+
+		.is-hoverable {
+			transition: all 250ms ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+
+				@media screen and (max-width: 768px) {
+					transform: none;
+				}
+			}
+		}
+
+		.academia-logo {
+			display: flex;
+			justify-content: center;
+		}
+}

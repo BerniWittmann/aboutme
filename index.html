@@ -67,25 +67,89 @@ layout: default
 </section>
 
 <section class="hero is-fullheight is-gray">
-	<div id="about-me" class="hero-body container">
+	<div id="greeting" class="hero-body container">
+		<h2 class="title is-2">Hi I#m berniwittmann TODO Text</h2>
+</section>
+
+<section class="hero is-fullheight">
+	<div id="academia" class="hero-body container">
 		<div class="columns is-vcentered">
-			<div class="column has-text-centered has-nice-link">
+			<div class="column has-text-centered has-nice-link is-4">
 				<p><i class="fas fa-graduation-cap fa-7x"></i></p>
 				<br/>
 				<h4 class="title is-4" style="font-weight: 400">I'm a Master student in Software-Engineering and always passionate about the newest technologies and frameworks.</h4>
 			</div>
-			<div id="latest-repos-container" class="column is-half is-offset-1 has-nice-link">
-				<h2 class="title is-2">Skills</h2>
-				<template id="latest-repos-template">
-					<div class="column is-half">
-						<h4 class="title is-4">
-							<a class="latest-repos-title" href=""></a>
-							<span class="tag is-small latest-repos-language">¯\_(ツ)_/¯</span>
-						</h4>
-						<p class="latest-repos-description"></p>
+			<div class="column is-7 is-offset-1 has-nice-link">
+				<h2 class="title is-2 has-text-centered-mobile">Academia</h2>
+				<div class="columns is-multiline">
+							<div class="column is-one-third academia-logo">
+								<div class="dropdown is-hoverable is-up">
+								  <div class="dropdown-trigger">
+										<figure class="image is-128x128" aria-haspopup="true" aria-controls="dropdown-menu-uulm">
+										  <img width="128" height="128" src="assets/academia-logos/uulm.png">
+										</figure>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu-uulm" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+								        <strong>Ulm University</strong>
+												<p>M.Sc. Software Engineering</p>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+							</div>
+							<div class="column is-one-third">
+								<div class="dropdown is-hoverable is-up academia-logo">
+								  <div class="dropdown-trigger">
+										<figure class="image is-128x128" aria-haspopup="true" aria-controls="dropdown-menu-berkeley">
+										  <img width="128" height="128" src="assets/academia-logos/berkeley.png">
+										</figure>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu-berkeley" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+								        <strong>University of California, Berkeley</strong>
+												<p>Summer Session</p>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+
+							</div>
+							<div class="column is-one-third">
+								<div class="dropdown is-hoverable is-up academia-logo">
+								  <div class="dropdown-trigger">
+										<figure class="image is-128x128" aria-haspopup="true" aria-controls="dropdown-menu-tum">
+										  <img width="128" height="128" src="assets/academia-logos/tum.png">
+										</figure>
+								  </div>
+								  <div class="dropdown-menu" id="dropdown-menu-tum" role="menu">
+								    <div class="dropdown-content">
+								      <div class="dropdown-item">
+								        <strong>Technological University Munich</strong>
+												<p>B.Sc. Management and Technology</p>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<div id="academia-text"></div>
 					</div>
-				</template>
-				<div id="latest-repos" class="columns is-multiline">
+		</div>
+	</div>
+</section>
+
+
+
+<section class="hero is-fullheight is-gray">
+	<div id="about-me" class="hero-body container">
+		<div class="columns is-vcentered">
+			<div id="latest-repos-container" class="column has-nice-link">
+				<h2 class="title is-2">Skills</h2>
+				<div class="columns is-multiline">
 					<div class="column is-one-third">
 						<h4 class="title is-4 element-tt">
 							<i class="fab fa-python fa-3x"></i>
