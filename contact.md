@@ -18,23 +18,29 @@ title: Contact
 <br>
 
 <p class="has-text-centered">
-	<a class="button is-large is-white" href="http://xing.to/Bernhard_Wittmann">
+	<a class="button is-large is-white" target="_blank" href="http://xing.to/Bernhard_Wittmann">
 		<span class="icon">
 			<i class="fab fa-xing"></i>
 		</span>
 		<span>Xing</span>
 	</a>
-	<a class="button is-large is-white" href="http://linkedin.com/in/bernhard-wittmann">
+	<a class="button is-large is-white" target="_blank" href="http://linkedin.com/in/bernhard-wittmann">
 		<span class="icon">
 			<i class="fab fa-linkedin"></i>
 		</span>
 		<span>LinkedIn</span>
 	</a>
-	<a class="button is-large is-white" href="https://github.com/berniwittmann">
+	<a class="button is-large is-white" target="_blank" href="https://github.com/berniwittmann">
 		<span class="icon">
 			<i class="fab fa-github"></i>
 		</span>
 		<span>GitHub</span>
+	</a>
+	<a class="button is-large is-white" target="_blank" href="https://gitlab.com/berniwittmann">
+		<span class="icon">
+			<i class="fab fa-gitlab"></i>
+		</span>
+		<span>GitLab</span>
 	</a>
 </p>
 <div>
