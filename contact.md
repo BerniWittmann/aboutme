@@ -10,7 +10,7 @@ title: Contact
 ---
 
 <p id="email" class="has-text-centered">
-	<a class="content is-large" href="mailto:contact@bernhardwittmann.com">contact@bernhardwittmann.com</a>
+	<a class="content is-large" href="mailto:contact@bernhardwittmann.com" data-contact-link="email">contact@bernhardwittmann.com</a>
 </p>
 
 ---
@@ -18,25 +18,25 @@ title: Contact
 <br>
 
 <p class="has-text-centered">
-	<a class="button is-large is-white" target="_blank" href="http://xing.to/Bernhard_Wittmann">
+	<a class="button is-large is-white" target="_blank" href="http://xing.to/Bernhard_Wittmann" data-contact-link="xing">
 		<span class="icon">
 			<i class="fab fa-xing"></i>
 		</span>
 		<span>Xing</span>
 	</a>
-	<a class="button is-large is-white" target="_blank" href="http://linkedin.com/in/bernhard-wittmann">
+	<a class="button is-large is-white" target="_blank" href="http://linkedin.com/in/bernhard-wittmann" data-contact-link="linkedin">
 		<span class="icon">
 			<i class="fab fa-linkedin"></i>
 		</span>
 		<span>LinkedIn</span>
 	</a>
-	<a class="button is-large is-white" target="_blank" href="https://github.com/berniwittmann">
+	<a class="button is-large is-white" target="_blank" href="https://github.com/berniwittmann" data-contact-link="github">
 		<span class="icon">
 			<i class="fab fa-github"></i>
 		</span>
 		<span>GitHub</span>
 	</a>
-	<a class="button is-large is-white" target="_blank" href="https://gitlab.com/berniwittmann">
+	<a class="button is-large is-white" target="_blank" href="https://gitlab.com/berniwittmann" data-contact-link="gitlab">
 		<span class="icon">
 			<i class="fab fa-gitlab"></i>
 		</span>
@@ -48,7 +48,7 @@ title: Contact
 	<br>
 </div>
 <p class="has-text-centered">
-	<a class="button is-medium is-outlined is-info" href="https://keybase.io/bernhardwittmann">
+	<a class="button is-medium is-outlined is-info" target="_blank" href="https://keybase.io/bernhardwittmann" data-contact-link="keybase">
 		<span class="icon">
 			<i class="fab fa-keybase"></i>
 		</span>

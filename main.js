@@ -3,7 +3,7 @@
 	// Helper
 	const dom = {
 		select: document.querySelector.bind(document),
-		slectAll: document.querySelectorAll.bind(document)
+		selectAll: document.querySelectorAll.bind(document)
 	};
 
 	// Burger menu toggle
@@ -31,4 +31,15 @@
 
 		document.addEventListener('scroll', hideScrollHint, {passive: true});
 	}
+
+	function sendContactEvent(label) {
+		ga('send', 'event', 'ContactLink', 'click', label)
+	}
+
+	dom.selectAll('[data-contact-link]').forEach(link => {
+		const label = link.attributes['data-contact-link'].value
+		link.addEventListener('click', function () {
+			sendContactEvent(label)
+		})
+	})
 })();

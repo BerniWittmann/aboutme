@@ -5,7 +5,7 @@
 	// Helper
 	const dom = {
 		select: document.querySelector.bind(document),
-		slectAll: document.querySelectorAll.bind(document)
+		selectAll: document.querySelectorAll.bind(document)
 	};
 
 	function injectScript(src, cb) {
