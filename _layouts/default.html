@@ -33,12 +33,14 @@
 			<script defer src="{{ '/index.js' | relative_url }}"></script>
 		{% endif %}
 		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119004201-1"></script>
 		<script>
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', 'UA-98245311-1', 'auto');
-			ga('send', 'pageview');
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-119004201-1');
 		</script>
-		<script defer src="https://www.google-analytics.com/analytics.js"></script>
 		<!-- / Google Analytics -->
 	</head>
 	<body>
