@@ -33,7 +33,10 @@
 	}
 
 	function sendContactEvent(label) {
-		ga('send', 'event', 'ContactLink', 'click', label)
+		gtag('event', label, {
+			'event_category': 'contact',
+			'event_label': 'Contact ' + label
+		})
 	}
 
 	dom.selectAll('[data-contact-link]').forEach(link => {
