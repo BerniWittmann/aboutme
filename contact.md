@@ -42,6 +42,12 @@ title: Contact
 		</span>
 		<span>GitLab</span>
 	</a>
+	<a class="button is-large is-white" target="_blank" href="https://dev.to/berniwittmann" data-contact-link="dev">
+		<span class="icon">
+			<i class="fab fa-dev"></i>
+		</span>
+		<span>Blog Posts</span>
+	</a>
 </p>
 <div>
 	<br>

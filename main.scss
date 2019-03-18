@@ -285,3 +285,16 @@ body {
 		margin-right: 10px;
 	}
 }
+
+.has-centered-icon {
+	display: flex;
+	align-items: center;
+	a.no-underline {
+		margin-left: 10px;
+		color: #333;
+
+		&:hover {
+			color: $gray-link;
+		}
+	}
+}
