@@ -247,6 +247,10 @@ body {
 	margin-top: 30px;
 }
 
+.mt-60 {
+	margin-top: 60px;
+}
+
 .mb-10 {
 	margin-bottom: 10px;
 }
@@ -276,6 +280,10 @@ body {
 		&.no-flex {
 			flex: 0;
 		}
+		&.flex-image {
+			flex: 0;
+			flex-basis: 350px;
+		}
 	}
 }
 
@@ -301,4 +309,51 @@ body {
 
 .title .fab {
 	font-weight: normal;
+}
+
+#blog-posts {
+	align-items: stretch;
+	flex-wrap: wrap;
+	.column {
+		display: flex;
+
+		.flex-link {
+			display: flex;
+			flex: 1;
+		}
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+
+		.card-content {
+			flex: 1;
+		}
+
+		.card-footer {
+			flex: 0;
+		}
+
+		.title {
+			color: $text-strong;
+			display: block;
+		}
+
+		&.read-more-card {
+			flex: 1;
+			opacity: 0.8;
+			transition: all 200ms ease-in-out;
+			cursor: pointer;
+			&:hover {
+				opacity: 1
+			}
+			.card-content {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
 }

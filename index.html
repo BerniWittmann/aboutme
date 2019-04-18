@@ -84,16 +84,52 @@ layout: default
 					<p class="is-size-5 has-text-left">Developer @ <a target="_blank" href="https://www.home-fox.de/">HomeFox</a></p>
 					<p class="is-size-5 has-text-left">M.Sc. Student @ <a target="_blank" href="https://www.uni-ulm.de/">Ulm University</a></p>
 					<p class="is-size-5 has-text-left">Developer and Webmaster @ <a target="_blank" href="https://www.handballismaning.de/">TSV Ismaning Handball</a></p>
-					<br>
-					<br>
-					<br>
-					<p class="is-size-5 has-text-left has-centered-icon">Check out my latest Blog Posts on <a target="_blank" href="https://dev.to/berniwittmann" class="no-underline" data-contact-link="dev"><i class="fab fa-3x fa-dev" title="my DEV Profile"></i></a></p>
 				</div>
-				<div class="flex-column no-flex">
-					<figure class="image is-256x256">
-						<img src="image.jpg" class="profile-pic" width="256" height="256" itemprop="image">
+				<div class="flex-column flex-image">
+					<figure class="image is-350x350">
+						<img src="image.jpg" class="profile-pic" width="350" height="350" itemprop="image">
 					</figure>
 				</div>
+			</div>
+		</div>
+		<div class="container mt-60">
+			<h5 class="title is-5">Most recent Blog posts</h5>
+			<template id="blog-post-template">
+				<div class="column is-half-tablet is-one-quarter-desktop d-flex">
+					<div class="card">
+						<div class="card-image">
+					    <figure class="image is-3by1">
+					      <img src="">
+					    </figure>
+					  </div>
+						<div class="card-content">
+							<a class="title is-4 mb-10" href="" target="_blank"></a>
+							<p class=subtitle></p>
+						</div>
+						<footer class="card-footer">
+							<p class="card-footer-item">
+								<span>
+									View on <a href="" target="_blank">DEV</a>
+								</span>
+							</p>
+						</footer>
+					</div>
+				</div>
+			</template>
+			<template id="read-more-posts-template">
+				<div class="column is-half-tablet is-one-quarter-desktop d-flex">
+					<a target="_blank" href="https://dev.to/berniwittmann" class="flex-link" data-contact-link="dev">
+						<div class="card read-more-card">
+							<div class="card-content">
+								<p class="title is-4 mb-10 has-text-centered">Read more on</p>
+								<p class="title is-4 mb-10 has-text-centered"><i class="fab fa-3x fa-dev" title="my DEV Profile"></i></p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</template>
+			<div class="columns" id="blog-posts">
+
 			</div>
 		</div>
 	</div>
