@@ -28,15 +28,17 @@ const dom = {
 (async () => {
 	const url = 'https://dev.to/api/articles?username=berniwittmann'
 
-	const json = await (await fetch(url)).json();
+	let json = await (await fetch(url)).json();
 
 	const template = dom.select('#blog-post-template');
 	const container = dom.select('#blog-posts');
 
+	json = json.filter((post) => {
+		if (!post.id || !post.url || !post.title || !post.published_at) return false;
+		if ([92660].includes(post.id)) return false;
+		return true
+	}).slice(0, 3)
 	for (const post of json) {
-		if (!post.id || !post.url || !post.title || !post.published_at) continue;
-		if ([92660].includes(post.id)) continue;
-
 		const content = template.cloneNode(true).content;
 
 		const title = content.querySelector('.title');
