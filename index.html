@@ -86,14 +86,21 @@ layout: default
 					<p class="is-size-5 has-text-left">Developer and Webmaster @ <a target="_blank" href="https://www.handballismaning.de/">TSV Ismaning Handball</a></p>
 				</div>
 				<div class="flex-column flex-image">
-					<figure class="image is-350x350">
-						<img src="image.jpg" class="profile-pic" width="350" height="350" itemprop="image">
+					<figure class="image is-256x256">
+						<img src="image.jpg" class="profile-pic" width="256" height="256" itemprop="image">
 					</figure>
 				</div>
 			</div>
 		</div>
-		<div class="container mt-60">
-			<h5 class="title is-5">Most recent Blog posts</h5>
+	</div>
+</section>
+
+<section class="hero is-light is-medium">
+	<div id="blogging" class="hero-body">
+		<div class="container ">
+			<h2 class="title is-2">Most recent Blog posts</h2>
+			<h4 class="title is-4 has-nice-link" style="font-weight: 400">I occasionally blog about my development experiences on <a target="_blank" href="https://dev.to/berniwittmann" data-contact-link="dev">DEV.to</a></h4>
+
 			<template id="blog-post-template">
 				<div class="column is-half-tablet is-one-quarter-desktop d-flex">
 					<div class="card">
@@ -109,7 +116,7 @@ layout: default
 						<footer class="card-footer">
 							<p class="card-footer-item">
 								<span>
-									View on <a href="" target="_blank">DEV</a>
+									<a href="" target="_blank">Read Now</a>
 								</span>
 							</p>
 						</footer>
@@ -128,7 +135,7 @@ layout: default
 					</a>
 				</div>
 			</template>
-			<div class="columns" id="blog-posts">
+			<div class="columns mt-30" id="blog-posts">
 
 			</div>
 		</div>
@@ -285,7 +292,7 @@ layout: default
 			{% for app in site.apps reversed %}
 			<div class="column is-mobile is-half-tablet is-one-third-desktop">
 				<a href="{% if app.external_url %}{{ app.external_url }}{% else %}{{ app.url }}{% endif %}">
-					<div class="box">
+					<div class="box is-clipped">
 						<figure class="image">
 							{% comment %}
 								This mess is needed because we don't know the extension of the thumbnail upfront...

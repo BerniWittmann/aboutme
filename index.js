@@ -1,30 +1,29 @@
 /* eslint-env browser */
-
-const isDev = ['localhost', '127.0.0.1'].includes(location.hostname);
-
 // Helper
 const dom = {
 	select: document.querySelector.bind(document),
 	selectAll: document.querySelectorAll.bind(document)
 };
 
-function injectScript(src, cb) {
-	const script = document.createElement('script');
-	script.src = src;
-	script.addEventListener('load', cb);
-	document.head.appendChild(script);
-}
+(() => {
+	const isDev = ['localhost', '127.0.0.1'].includes(location.hostname);
 
-// Smooth anchor scroll
-const scroller = new AnchorScroller().scroller;
+	function injectScript(src, cb) {
+		const script = document.createElement('script');
+		script.src = src;
+		script.addEventListener('load', cb);
+		document.head.appendChild(script);
+	}
 
+	// Smooth anchor scroll
+	const scroller = new AnchorScroller().scroller;
 
-function scrollToTop() {
-	scroller.scrollTo(0);
-}
+	function scrollToTop() {
+		scroller.scrollTo(0);
+	}
 
-dom.select('#backToTopButton').addEventListener('click', scrollToTop);
-
+	dom.select('#backToTopButton').addEventListener('click', scrollToTop);
+})();
 
 (async () => {
 	const url = 'https://dev.to/api/articles?username=berniwittmann'
@@ -35,11 +34,8 @@ dom.select('#backToTopButton').addEventListener('click', scrollToTop);
 	const container = dom.select('#blog-posts');
 
 	for (const post of json) {
-		console.log(post)
 		if (!post.id || !post.url || !post.title || !post.published_at) continue;
 		if ([92660].includes(post.id)) continue;
-
-		console.log(post)
 
 		const content = template.cloneNode(true).content;
 
