@@ -35,7 +35,7 @@ const dom = {
 
 	json = json.filter((post) => {
 		if (!post.id || !post.url || !post.title || !post.published_at) return false;
-		if ([92660].includes(post.id)) return false;
+		if ([92660, 462953].includes(post.id)) return false;
 		return true
 	}).slice(0, 3)
 	for (const post of json) {
