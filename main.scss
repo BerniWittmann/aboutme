@@ -3,7 +3,9 @@
 
 @import 'sass/utilities/initial-variables';
 
-$primary: $blue;
+$primary: #1c243b;
+$text-strong: $primary;
+$title-color: $primary;
 
 @import 'bulma';
 
@@ -158,7 +160,7 @@ body {
 	width: inherit;
 	height: inherit;
 	border-radius: 40px;
-	filter: drop-shadow(0px 2px 5px #D5D5D5);
+	filter: drop-shadow(0px 2px 5px lighten($primary, 10%));
 }
 
 .profile-pic-2 {
@@ -370,4 +372,8 @@ body {
 			}
 		}
 	}
+}
+
+.hero.is-light .title {
+	color: $title-color;
 }
